@@ -11,7 +11,7 @@ import { IFood } from '../../../types';
 interface ModalEditFoodProps{
   isOpen: boolean,
   setIsOpen: () =>void,
-  editingFood:() => void,
+  editingFood: IFood | undefined;
   handleUpdateFood:(food: IFood)=> void
 }
 
